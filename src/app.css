@@ -1,0 +1,121 @@
+.center {
+    text-align: center;
+}
+  
+.blue-text {
+    color: blue;
+}
+
+.collection-item {
+    padding: 16px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+  
+.collection-item button {
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+  
+.collection-item button:hover {
+    background-color: #e60000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+  
+@media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 0 10px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 0 5px;
+    }
+}
+  
+form {
+    max-width: 600px; /* Sets a maximum width for the form */
+    margin: 0 auto; /* Centers the form horizontally */
+    padding: 20px; /* Adds padding inside the form */
+    border: 1px solid #ddd; /* Adds a border around the form */
+    border-radius: 8px; /* Rounds the corners of the form */
+    background-color: #f9f9f9; /* Sets a background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  /* Form Elements Styles */
+  label {
+    display: block; /* Makes labels block-level elements */
+    margin-bottom: 8px; /* Adds space below each label */
+    font-weight: bold; /* Makes label text bold */
+    color: #333; /* Sets the color of the label text */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%; /* Makes input fields take the full width of the container */
+    padding: 10px; /* Adds padding inside the input fields */
+    margin-bottom: 16px; /* Adds space below each input field */
+    border: 1px solid #ddd; /* Adds a border around the input fields */
+    border-radius: 4px; /* Rounds the corners of the input fields */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  }
+  
+  textarea {
+    height: 150px; /* Sets a fixed height for textarea */
+    resize: vertical; /* Allows vertical resizing of textarea */
+  }
+  
+  input[type="submit"],
+  button {
+    background-color: #007bff; /* Sets the background color for buttons */
+    color: #fff; /* Sets the text color of buttons */
+    border: none; /* Removes the border */
+    padding: 10px 20px; /* Adds padding inside the button */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-size: 16px; /* Sets the font size */
+    transition: background-color 0.3s; /* Adds a transition effect */
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #0056b3; /* Changes the background color on hover */
+  }
+  
+  /* Optional Styles for Validation Messages */
+  .error-message {
+    color: #d9534f; /* Sets the color for error messages */
+    font-size: 14px; /* Sets the font size */
+    margin-top: -10px; /* Moves the error message closer to the input field */
+    margin-bottom: 16px; /* Adds space below the error message */
+  }
